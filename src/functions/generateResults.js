@@ -14,6 +14,6 @@ export default async function generateResults(data) {
   temp.textContent = ctof(ktoc(data.temp));
   description.textContent = data.description;
   feelsLike.textContent = `Feels like: ${ctof(ktoc(data.feelsLike))}`;
-  maxTemp.textContent = `Max: ${ctof(ktoc(data.maxTemp))}`;
-  minTemp.textContent = `Min: ${ctof(ktoc(data.minTemp))}`;
+  maxTemp.textContent = `Hi ${ctof(ktoc(data.maxTemp))}`;
+  minTemp.textContent = `Lo ${ctof(ktoc(data.minTemp))}`;
 }

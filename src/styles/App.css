@@ -1,9 +1,47 @@
 :root {
-  --body-bg-color: rgb(223, 226, 239);
+  --body-bg-color: rgb(28, 15, 19);
+  --results-bg-color: rgba(28, 15, 19, 0.5);
+  --lavender-gray: rgb(187, 186, 198);
+  --opal: rgb(183, 206, 206);
 }
 
 body {
   background-color: var(--body-bg-color);
   display: flex;
   justify-content: center;
+}
+
+#results-container-bg {
+  margin: 20px;
+  padding: 6px;
+  width: clamp(15rem, 25vw, 20rem);
+  height: auto;
+  background-color: var(--lavender-gray);
+  border-radius: 10px;
+}
+
+#results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--results-bg-color);
+  border-radius: 10px;
+}
+
+#location-container,
+#feels-like,
+#bottom-container {
+  color: var(--lavender-gray);
+}
+
+#middle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  color: var(--opal);
+}
+
+#description {
+  flex-wrap: wrap;
 }

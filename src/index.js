@@ -11,7 +11,7 @@ const searchBar = document.getElementById("search");
 const getWeather = async () => {
   const allData = await getData(searchBar.value);
   const cleanData = await processData(allData);
-  console.log(cleanData);
+  //   console.log(cleanData);
   generateResults(cleanData);
 };
 

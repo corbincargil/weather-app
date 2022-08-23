@@ -7,6 +7,5 @@ export default async function getData(location) {
     { mode: "cors" }
   );
   const data = await response.json();
-  console.log(data);
   return data;
 }

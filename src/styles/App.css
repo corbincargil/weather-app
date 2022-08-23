@@ -1,0 +1,9 @@
+:root {
+  --body-bg-color: rgb(223, 226, 239);
+}
+
+body {
+  background-color: var(--body-bg-color);
+  display: flex;
+  justify-content: center;
+}

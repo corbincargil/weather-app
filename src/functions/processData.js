@@ -1,10 +1,16 @@
 export default async function processData(data) {
-  console.log(data);
   const cleanData = {
     location: await data.name,
     description: await data.weather[0].description,
-    // maxT: data.,
-    // minT
+    maxTemp: await data.main.temp_max,
+    minTemp: await data.main.temp_min,
+    feelsLike: await data.main.feels_like,
+    humidity: await data.main.humidity,
+    temp: await data.main.temp,
+    timezone: await data.timezone,
+    visibility: await data.visibility,
+    windSpeed: await data.wind.speed,
+    windDirection: await data.wind.deg,
   };
   return cleanData;
 }

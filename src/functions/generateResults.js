@@ -12,7 +12,7 @@ export default async function generateResults(data) {
   //adding text content
   location.textContent = `${data.city}, ${data.country}`;
   temp.textContent = `${ctof(ktoc(data.temp))}\u00B0`;
-  description.textContent = `${data.description}\u00B0`;
+  description.textContent = `${data.description}`;
   feelsLike.textContent = `Feels like: ${ctof(ktoc(data.feelsLike))}\u00B0`;
   maxTemp.textContent = `Hi ${ctof(ktoc(data.maxTemp))}\u00B0`;
   minTemp.textContent = `Lo ${ctof(ktoc(data.minTemp))}\u00B0`;

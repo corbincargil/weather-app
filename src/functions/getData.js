@@ -1,5 +1,6 @@
 import apikey from "../apikey.js";
 const loader = document.getElementById("loader");
+const tempConverter = document.getElementById("temp-converter");
 
 export default async function getData(location) {
   const key = apikey;
@@ -9,6 +10,7 @@ export default async function getData(location) {
     { mode: "cors" }
   );
   loader.style.display = "none";
+  tempConverter.style.display = "block";
   const data = await response.json();
   return data;
 }

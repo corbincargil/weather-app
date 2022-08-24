@@ -1,6 +1,7 @@
 :root {
   --body-bg-color: rgb(237, 233, 207);
   --search-bar-bg-color: rgb(207, 213, 226);
+  --search-btn-border: #6fcb88;
   --results-bg-color: rgba(221, 208, 160, 0.812);
   --location-color: #7187cc;
   --temp-color: #b4a065;
@@ -30,7 +31,7 @@ input[type="text"] {
   padding: 0px 10px;
   width: 12rem;
   height: 3rem;
-  border: solid 2px rgb(127, 137, 156);
+  border: solid 2px rgb(171, 178, 194);
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
   border-radius: 30px;
   background-color: var(--search-bar-bg-color);
@@ -40,7 +41,7 @@ input:focus {
 }
 button {
   /* margin-top: 20px; */
-  border: none;
+  border: 1px solid var(--search-btn-border);
   border-radius: 30px;
   width: 50px;
   height: 50px;
@@ -141,9 +142,11 @@ button:hover {
 }
 
 /* The switch - the box around the slider */
+#temp-converter {
+  display: none;
+}
 .switch {
   position: relative;
-  display: inline-block;
   width: 60px;
   height: 34px;
 }

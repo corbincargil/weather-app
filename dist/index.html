@@ -14,8 +14,16 @@
   <body>
     <div id="content">
       <div id="main">
-        <input type="text" id="search" placeholder="Enter a city..." />
-        <button type="submit" id="submit-btn">Search</button>
+        <div class="search-container">
+          <input type="text" id="search" placeholder="Enter a city..." />
+          <button type="submit" id="submit-btn">
+            <img
+              class="search-btn"
+              src="../src/assets/search-green.svg"
+              alt="search-button"
+            />
+          </button>
+        </div>
         <div id="results-container-bg">
           <div id="results-container">
             <div id="location-container"><p id="location"></p></div>

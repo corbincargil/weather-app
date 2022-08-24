@@ -31,12 +31,10 @@ document.addEventListener("keypress", (e) => {
 
 tempConverter.addEventListener("click", () => {
   if (tempConverter.classList.contains("temp-f")) {
-    console.log("switching to F");
     displayTempC(cleanData);
     tempConverter.classList.remove("temp-f");
     tempConverter.classList.add("temp-c");
   } else if (tempConverter.classList.contains("temp-c")) {
-    console.log("switching to C");
     displayTempF(cleanData);
     tempConverter.classList.remove("temp-c");
     tempConverter.classList.add("temp-f");

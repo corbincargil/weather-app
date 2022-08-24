@@ -10,7 +10,6 @@ import {
 const button = document.querySelector("button");
 const searchBar = document.getElementById("search");
 const tempConverter = document.getElementById("slider");
-
 //Init
 let cleanData;
 

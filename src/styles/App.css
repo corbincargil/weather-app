@@ -1,8 +1,12 @@
 :root {
-  --body-bg-color: rgb(28, 15, 19);
-  --results-bg-color: rgba(28, 15, 19, 0.5);
+  --body-bg-color: rgb(237, 233, 207);
+  --results-bg-color: rgba(237, 233, 207);
+  --tangerine: rgb(234, 178, 79);
+  --dark-orange: rgb(231, 93, 41);
+  --lighter-orange: rgb(243, 138, 100);
   --lavender-gray: rgb(187, 186, 198);
   --opal: rgb(183, 206, 206);
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -10,17 +14,20 @@ body {
   display: flex;
   justify-content: center;
 }
-
+p {
+  margin: 8px;
+}
 #results-container-bg {
   margin: 20px;
-  padding: 6px;
+  padding: 12px 8px 8px;
   width: clamp(15rem, 25vw, 20rem);
   height: auto;
-  background-color: var(--lavender-gray);
+  background-color: var(--tangerine);
   border-radius: 10px;
 }
 
 #results-container {
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,17 +38,34 @@ body {
 #location-container,
 #feels-like,
 #bottom-container {
-  color: var(--lavender-gray);
+  color: var(--dark-orange);
+  font-weight: 300;
 }
 
-#middle-container {
+#middle-container,
+#bottom-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
-  color: var(--opal);
+  gap: 20px;
+  color: var(--dark-orange);
 }
 
+#location {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+#current-temp {
+  margin: 0 0 0 18px;
+  font-size: 3rem;
+}
 #description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: center;
   flex-wrap: wrap;
+  color: var(--lighter-orange);
+}
+#feels-like {
+  color: var(--lighter-orange);
 }

@@ -1,6 +1,7 @@
 export default async function processData(data) {
   const cleanData = {
-    location: await data.name,
+    city: await data.name,
+    country: await data.sys.country,
     description: await data.weather[0].description,
     maxTemp: await data.main.temp_max,
     minTemp: await data.main.temp_min,

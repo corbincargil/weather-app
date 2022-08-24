@@ -10,7 +10,7 @@ export default async function generateResults(data) {
   const minTemp = document.getElementById("min-temp");
 
   //adding text content
-  location.textContent = data.location;
+  location.textContent = `${data.city}, ${data.country}`;
   temp.textContent = ctof(ktoc(data.temp));
   description.textContent = data.description;
   feelsLike.textContent = `Feels like: ${ctof(ktoc(data.feelsLike))}`;

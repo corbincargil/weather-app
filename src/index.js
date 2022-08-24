@@ -6,7 +6,6 @@ import generateResults from "./functions/generateResults.js";
 //DOM elements
 const button = document.querySelector("button");
 const searchBar = document.getElementById("search");
-const form = document.getElementById("form");
 
 //getWeather
 const getWeather = async () => {

@@ -70,3 +70,24 @@ p {
 #feels-like {
   color: var(--lighter-orange);
 }
+
+#loader {
+  border: 8px solid var(--tangerine);
+  border-top: 8px solid var(--results-bg-color);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  animation: spin 0.8s linear infinite;
+  position: relative;
+  bottom: 200px;
+  left: 135px;
+  display: none;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

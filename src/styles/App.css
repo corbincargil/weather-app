@@ -20,14 +20,15 @@ p {
 #results-container-bg {
   margin: 20px;
   padding: 12px 8px 8px;
-  width: clamp(15rem, 25vw, 20rem);
-  height: auto;
+  width: 18rem;
+  height: 18rem;
   background-color: var(--tangerine);
   border-radius: 10px;
 }
 
 #results-container {
   font-size: 1.5rem;
+  height: 18rem;
   display: flex;
   flex-direction: column;
   align-items: center;

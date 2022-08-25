@@ -10,6 +10,7 @@ module.exports = {
   output: {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "[name][ext]",
   },
   devServer: {
     static: {
@@ -26,6 +27,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(png|jpg|svg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },

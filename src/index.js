@@ -1,4 +1,5 @@
 import "./styles/App.css";
+import img from "./assets/search-green.svg";
 import getData from "./functions/getData.js";
 import processData from "./functions/processData.js";
 import {
@@ -9,6 +10,8 @@ import {
 
 //DOM elements
 const button = document.querySelector("button");
+const searchIcon = document.getElementById("img");
+searchIcon.src = img;
 const searchBar = document.getElementById("search");
 const tempConverter = document.getElementById("slider");
 //Init

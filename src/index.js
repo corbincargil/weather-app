@@ -1,3 +1,4 @@
+import "./styles/App.css";
 import getData from "./functions/getData.js";
 import processData from "./functions/processData.js";
 import {
